@@ -16,6 +16,8 @@ header {
 }
 
 
+
+
 /*WIDGET INSTAGRAM*/
 .instagram-section {
   background-color: #f9f9f9;
@@ -194,30 +196,100 @@ main {
 
 
 
-
-/* FOOTER: Rodapé com links de redes sociais */
-footer {
-    background-color: #003366; /* Dark Blue */
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+/* CSS do Footer */
+.site-footer {
+  background: linear-gradient(to bottom, #111, #003042);
+  color: #e0e0e0;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.social-icons {
-    margin-top: 10px;
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 40px;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    color: #003366; /* Dark blue */
-    text-decoration: none;
+.footer-col h3 {
+  font-size: 1.0rem;
+  margin-bottom: 10px;
 }
 
-.social-icons a:hover {
-    color: #ff4500; /* A shade of orange */
+.footer-col h3 span {
+  font-weight: normal;
+  font-size: 1rem;
+  display: block;
+  color: #aaa;
+}
+
+.footer-col h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #78c0ff;
+  text-decoration: underline;
+}
+
+.footer-icons {
+  margin-top: 15px;
+}
+
+.footer-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.footer-icons a:hover {
+  color: #78c0ff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+  }
 }
 
 
