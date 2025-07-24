@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # STEM Global Bridge
 
 ## Project Description
@@ -34,3 +35,7 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Contact
 For any inquiries, please reach out via the contact page on the website.
+=======
+# STEMGlobalBridge
+A website for my project, STEM Global Bridge. 
+>>>>>>> de88afb828f47a511a562fb0acf7f1a484af268f
