@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+/* HEADER: Menu de navegação fixo no topo */
+header {
+    background-color: #003366; /* Azul escuro */
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+/*WIDGET INSTAGRAM*/
+.instagram-section {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: left;
+  color: #ff4500; /* cor laranja */
+}
+
+.instagram-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.instagram-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.instagram-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.snapwidget-widget {
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  max-width: 100%;
+}
+
+.insta-profile-box {
+  background: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.insta-profile-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.insta-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.insta-user-info strong {
+  font-size: 1rem;
+  color: #000;
+}
+
+.insta-user-info p {
+  margin: 4px 0 2px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.insta-user-info span {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.insta-icon-link img {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+
+/* Container da navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #003366; /* Azul escuro */
+}
+
+/* Lista de links */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links da navbar */
+.navbar-menu li a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #8fe3cf; /* cor suave */
+}
+
+/* Branding ou logo à direita */
+.navbar-brand {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ccc;
+  white-space: nowrap;
+}
+
+/* Responsivo (opcional) */
+@media (max-width: 768px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+}
+
+
+/* Espaço extra no topo do conteúdo por causa do header fixo */
+main {
+    padding: 100px 20px 20px 20px;
+}
+
+/*CSS DO ABOUT*/
+.about-section {
+  background-color: #f8f8f8;
+  padding: 80px 20px;
+}
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  color: #333;
+}
+
+.about-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #111;
+  font-weight: 600;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+/* FOOTER: Rodapé com links de redes sociais */
+footer {
+    background-color: #003366; /* Dark Blue */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #003366; /* Dark blue */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff4500; /* A shade of orange */
+}
+
+
+/* HERO: fundo com imagem, overlay escuro e texto central */
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/your-background.jpg'); /* Substitua pelo seu caminho da imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Overlay escuro por cima da imagem */
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Conteúdo do texto */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+/* Botão elegante em branco com borda */
+.hero-button {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid #FFB703;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #FFB703;
+    color: #023047;
+}
+
+
+/* Botão hamburguer */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-brand {
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+}

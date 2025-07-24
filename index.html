@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM Global Bridge - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+  <ul class="navbar-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="navbar-brand">
+    STEM GLOBAL BRIDGE
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    &#9776;
+  </div>
+</nav>
+    </header>
+    <main>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>STEM Global Bridge</h1>
+        <p>Connecting STEM enthusiasts worldwide to foster innovation and collaboration.</p>
+      <a href="join-us.html" class="hero-button">Join Us →</a>
+    </div>
+  </section>
+</main>
+
+<section class="instagram-section">
+  <div class="instagram-container">
+    <h2>Keep up with SGB!</h2>
+
+    <div class="insta-profile-box">
+  <div class="insta-profile-left">
+    <img src="images/instagram-avatar.jpg" alt="Avatar Instagram" class="insta-avatar">
+    <div class="insta-user-info">
+      <strong>@stemglobalbridge</strong>
+      <p>STEM Global Bridge</p>
+      <span>51 seguidores • 2 publicações</span>
+    </div>
+  </div>
+  <a href="https://instagram.com/stemglobalbridge" target="_blank" class="insta-icon-link">
+    <img src="images/instagram-icon.png" alt="Instagram" class="insta-icon">
+  </a>
+</div>
+
+    <!-- SnapWidget -->
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe 
+      src="https://snapwidget.com/embed/1103589" 
+      class="snapwidget-widget" 
+      allowtransparency="true" 
+      frameborder="0" 
+      scrolling="no" 
+      style="border:none; overflow:hidden; width:100%; height:500px;" 
+      title="Posts from Instagram">
+    </iframe>
+  </div>
+</section>
+    <footer>
+        <p>© 2025 All rights reserved. Made by Amanda Massarioli</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+  function toggleMenu() {
+    const menu = document.querySelector('.navbar-menu');
+    menu.classList.toggle('show');
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "stem-global-bridge",
+  "version": "1.0.0",
+  "description": "## Project Description STEM Global Bridge is an initiative aimed at connecting individuals and organizations interested in Science, Technology, Engineering, and Mathematics (STEM). This website serves as a platform to provide information about the project, showcase various STEM-related projects, and invite users to join the initiative.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
