@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - STEM Global Bridge</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - STEM Global Bridge</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-  <ul class="navbar-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="team.html">Team</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-  <div class="navbar-brand">
-    STEM GLOBAL BRIDGE
-  </div>
-  <div class="hamburger" onclick="toggleMenu()">
-    &#9776;
-  </div>
-</nav>
-    </header>
-    <main>
-        <h2>Our Projects</h2>
-        <section>
-            <article>
-                <h3>Project 1</h3>
-                <p>Description of Project 1 related to STEM Global Bridge.</p>
-                <a href="#">Learn more</a>
-            </article>
-            <article>
-                <h3>Project 2</h3>
-                <p>Description of Project 2 related to STEM Global Bridge.</p>
-                <a href="#">Learn more</a>
-            </article>
-            <article>
-                <h3>Project 3</h3>
-                <p>Description of Project 3 related to STEM Global Bridge.</p>
-                <a href="#">Learn more</a>
-            </article>
-            <!-- Add more projects as needed -->
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 All rights reserved. Made by Amanda Massarioli</p>
-        <div class="social-media">
-            <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="path/to/tiktok-icon.png" alt="TikTok"></a>
-            <a href="#"><img src="path/to/linkedin-icon.png" alt="LinkedIn"></a>
-        </div>
-    </footer>
-    <script>
-  function toggleMenu() {
-    const menu = document.querySelector('.navbar-menu');
-    menu.classList.toggle('show');
-  }
-</script>
-    <script src="js/main.js"></script>
+  <header>
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+      <div class="navbar-brand">STEM GLOBAL BRIDGE</div>
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+  </header>
+
+  <main class="projects-section">
+    <h2 class="projects-title">Our Projects</h2>
+    <p class="projects-description">
+      We are working on impactful initiatives to bridge STEM education around the world.
+    </p>
+
+    <div class="projects-coming-soon">
+      <h3>Coming Soon!</h3>
+      <p>Our team is working hard behind the scenes. Stay tuned for exciting projects!</p>
+      <div class="loader"></div>
+    </div>
+
+    <!-- Submit Idea Form -->
+    <div class="submit-idea-container">
+      <button class="submit-button" onclick="toggleForm()">✨ Submit Your Idea!</button>
+
+      <form id="idea-form" action="https://formspree.io/f/xanboazg" method="POST" class="hidden">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="idea" placeholder="Describe your idea..." rows="4" required></textarea>
+        <button type="submit">Send Idea</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>STEM GLOBAL BRIDGE</h3>
+      </div>
+
+      <div class="footer-col">
+        <h4>SUPPORT US</h4>
+        <ul>
+          <li><a href="join-us.html">Join →</a></li>
+          <li><a href="https://instagram.com/stemglobalbridge" target="_blank">Instagram</a></li>
+          <li><a href="https://linkedin.com/company/stemglobalbridge" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>ABOUT</h4>
+        <ul>
+          <li><a href="about.html">Programs</a></li>
+          <li><a href="projects.html">Impact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>GET INVOLVED</h4>
+        <ul>
+          <li><a href="mailto:stemglobalbridge@gmail.com">Email us →</a></li>
+          <li><a href="https://forms.gle/link-para-patrocinio" target="_blank">Become a sponsor</a></li>
+          <li><a href="https://forms.gle/link-para-parceria" target="_blank">Partner with us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 All rights reserved. Made by Amanda Massarioli</p>
+      <div class="footer-icons">
+        <a href="https://instagram.com/stemglobalbridge" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://linkedin.com/company/stemglobalbridge" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:stemglobalbridge@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector('.navbar-menu');
+      menu.classList.toggle('show');
+    }
+
+    function toggleForm() {
+      const form = document.getElementById("idea-form");
+      form.classList.toggle("hidden");
+    }
+  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
